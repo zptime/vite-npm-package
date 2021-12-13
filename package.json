@@ -1,0 +1,35 @@
+{
+  "name": "vite-npm-package",
+  "version": "1.0.1",
+  "description": "使用vite发布自定义组件到npm",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/tbutton.umd.js",
+  "module": "./dist/tbutton.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/tbutton.es.ts",
+      "require": "./dist/tbutton.umd.ts"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "license": "MIT",
+  "private": false,
+  "author": "zptime",
+  "dependencies": {
+    "vue": "^3.2.23"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.10.2",
+    "vite": "^2.7.0"
+  }
+}

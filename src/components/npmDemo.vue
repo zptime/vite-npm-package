@@ -1,0 +1,55 @@
+<template>
+  <div class="demo">
+    <t-button />
+  </div>
+</template>
+
+<script setup>
+import { tButton } from "vite-npm-package";
+import "vite-npm-package/dist/style.css";
+
+const fieldNames = {
+  children: "children",
+  label: "name",
+  key: "id",
+  value: "id",
+};
+
+const departTree = [
+  {
+    id: 1,
+    name: "根部门",
+    departNumber: 6,
+    children: [
+      {
+        id: 11,
+        pid: 1,
+        name: "一级部门1",
+        departNumber: 2,
+        children: [
+          { id: 111, pid: 11, name: "二级部门1", departNumber: 0 },
+          { id: 112, pid: 11, name: "二级部门2", departNumber: 0 },
+        ],
+      },
+      { id: 21, pid: 1, name: "一级部门2", departNumber: 0 },
+      { id: 31, pid: 1, name: "一级部门3", departNumber: 0 },
+      { id: 41, pid: 1, name: "一级部门4", departNumber: 0 },
+      { id: 51, pid: 1, name: "一级部门5", departNumber: 0 },
+      {
+        id: 61,
+        pid: 1,
+        name: "一级部门6",
+        departNumber: 2,
+        children: [
+          { id: 611, pid: 61, name: "二级部门3", departNumber: 0 },
+          { id: 612, pid: 61, name: "二级部门4", departNumber: 0 },
+        ],
+      },
+    ],
+  },
+];
+
+const departId = 11;
+</script>
+
+<style></style>
