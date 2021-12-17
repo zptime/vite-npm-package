@@ -2,7 +2,12 @@
   <button class="tButton">测试 发布 按钮组件</button>
 </template>
 
-<script setup></script>
+<script>
+// name是必须要写的
+export default {
+  name: "tButton",
+};
+</script>
 
 <style>
 .tButton {

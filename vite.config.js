@@ -25,6 +25,8 @@ export default defineConfig({
       name: "TButton",
       fileName: (format) => `tbutton.${format}.js`,
     },
+    // 自定义构建配置，可直接调整底层Rollup选项；Rollup有一套预设
+    // https://rollupjs.org/guide/en/#big-list-of-options
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ["vue"],

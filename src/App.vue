@@ -13,6 +13,7 @@ import npmDemo from "@/components/npmDemo.vue";
 <style>
 .demo {
   margin: 60px;
+  display: block;
 }
 .block {
   margin-bottom: 20px;
