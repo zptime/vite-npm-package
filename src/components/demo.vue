@@ -12,7 +12,14 @@
 
 <script setup>
 import tButton from "packages/button/src/index.vue";
+// 1. 本地引入
 import departTreeSelect from "packages/treeSelect/src/index.vue";
+
+// 2. 打包后引入(pnpm build)
+// import departTreeSelect from "../../dist/tTreeSelect.es.js";
+// import "../../dist/style.css";
+
+// 3. 发包到npm后使用 v2.0.0
 
 const fieldNames = {
   children: "children",

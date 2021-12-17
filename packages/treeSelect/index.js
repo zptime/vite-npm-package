@@ -1,4 +1,4 @@
-import tTreeSelect from "./src/index";
+import tTreeSelect from "./src/index.vue";
 
 tTreeSelect.install = function (Vue) {
   Vue.component(tTreeSelect.name, tTreeSelect);

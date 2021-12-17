@@ -1,16 +1,16 @@
 {
   "name": "vite-npm-package",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "使用vite发布自定义组件到npm",
   "files": [
     "dist"
   ],
-  "main": "./dist/tbutton.umd.js",
-  "module": "./dist/tbutton.es.js",
+  "main": "./dist/tTreeSelect.umd.js",
+  "module": "./dist/tTreeSelect.es.js",
   "exports": {
     ".": {
-      "import": "./dist/tbutton.es.js",
-      "require": "./dist/tbutton.umd.js"
+      "import": "./dist/tTreeSelect.es.js",
+      "require": "./dist/tTreeSelect.umd.js"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
@@ -26,10 +26,13 @@
   "private": false,
   "author": "zptime",
   "dependencies": {
+    "ant-design-vue": "^3.0.0-alpha.14",
+    "vite-npm-package": "^1.0.4",
     "vue": "^3.2.23"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.10.2",
-    "vite": "^2.7.0"
+    "vite": "^2.7.0",
+    "vite-plugin-components": "^0.13.3"
   }
 }
