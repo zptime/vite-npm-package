@@ -1,12 +1,28 @@
 <template>
   <div class="demo">
+    本地引入
     <t-button class="block" />
-
     <depart-tree-select
       :depart-source="departTree"
       v-model:value="departId"
       :fieldNames="fieldNames"
     />
+    <br /><br />
+    dist引入
+    <tmc-button />
+    <tmc-tree-select
+      :depart-source="departTree"
+      v-model:value="departId"
+      :fieldNames="fieldNames"
+    />
+    <br /><br />
+
+    npm包引入
+    <!-- <t-tree-select
+      :depart-source="departTree"
+      v-model:value="departId"
+      :fieldNames="fieldNames"
+    /> -->
   </div>
 </template>
 
@@ -16,10 +32,14 @@ import tButton from "packages/button/src/index.vue";
 import departTreeSelect from "packages/treeSelect/src/index.vue";
 
 // 2. 打包后引入(pnpm build)
-// import departTreeSelect from "../../dist/tTreeSelect.es.js";
-// import "../../dist/style.css";
+import tAntDesign from "../../dist/tAntDesign.es.js";
+const { tButton: tmcButton, tTreeSelect: tmcTreeSelect } = tAntDesign;
+import "../../dist/style.css";
 
-// 3. 发包到npm后使用 v2.0.0
+// import tAntDesign from "vite-npm-package";
+// debugger
+// const { tButton: tmcButton, tTreeSelect: tmcTreeSelect } = tAntDesign;
+// import "vite-npm-package/dist/style.css";
 
 const fieldNames = {
   children: "children",

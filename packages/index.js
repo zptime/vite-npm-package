@@ -1,4 +1,4 @@
-import tButton from "./tButton";
+import tButton from "./button";
 import tTreeSelect from "./treeSelect";
 
 const components = [tButton, tTreeSelect];

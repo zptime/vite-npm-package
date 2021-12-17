@@ -27,9 +27,14 @@ export default defineConfig({
       // fileName: (format) => `tbutton.${format}.js`,
 
       // 2. 基于Ant Design Vue TreeSelect二次封装的组件的打包配置
-      entry: resolve("packages/treeSelect/index.js"),
-      name: "TTreeSelect",
-      fileName: (format) => `tTreeSelect.${format}.js`,
+      // entry: resolve("packages/treeSelect/index.js"),
+      // name: "TTreeSelect",
+      // fileName: (format) => `tTreeSelect.${format}.js`,
+
+      // 3. 发布自定义组件库，包含tButton 和 tTreeSelect两个组件
+      entry: resolve("packages/index.js"),
+      name: "tAntDesign",
+      fileName: (format) => `tAntDesign.${format}.js`,
     },
     // 自定义构建配置，可直接调整底层Rollup选项；Rollup有一套预设
     // https://rollupjs.org/guide/en/#big-list-of-options
