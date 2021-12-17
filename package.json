@@ -1,6 +1,6 @@
 {
   "name": "vite-npm-package",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "使用vite发布自定义组件库到npm",
   "files": [
     "dist"
