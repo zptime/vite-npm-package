@@ -18,28 +18,28 @@
     <br /><br />
 
     npm包引入
-    <!-- <t-tree-select
+    <m-button />
+    <m-tree-select
       :depart-source="departTree"
       v-model:value="departId"
       :fieldNames="fieldNames"
-    /> -->
+    />
   </div>
 </template>
 
 <script setup>
-import tButton from "packages/button/src/index.vue";
 // 1. 本地引入
+import tButton from "packages/button/src/index.vue";
 import departTreeSelect from "packages/treeSelect/src/index.vue";
 
 // 2. 打包后引入(pnpm build)
-import tAntDesign from "../../dist/tAntDesign.es.js";
-const { tButton: tmcButton, tTreeSelect: tmcTreeSelect } = tAntDesign;
+import tmcAntDesign from "../../dist/tAntDesign.es.js";
+const { tButton: tmcButton, tTreeSelect: tmcTreeSelect } = tmcAntDesign;
 import "../../dist/style.css";
 
-// import tAntDesign from "vite-npm-package";
-// debugger
-// const { tButton: tmcButton, tTreeSelect: tmcTreeSelect } = tAntDesign;
-// import "vite-npm-package/dist/style.css";
+import tAntDesign from "vite-npm-package";
+const { tButton: mButton, tTreeSelect: mTreeSelect } = tAntDesign;
+import "vite-npm-package/dist/style.css";
 
 const fieldNames = {
   children: "children",

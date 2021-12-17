@@ -4,13 +4,13 @@ specifiers:
   '@vitejs/plugin-vue': ^1.10.2
   ant-design-vue: ^3.0.0-alpha.14
   vite: ^2.7.0
-  vite-npm-package: ^1.0.4
+  vite-npm-package: ^3.0.0
   vite-plugin-components: ^0.13.3
   vue: ^3.2.23
 
 dependencies:
   ant-design-vue: 3.0.0-alpha.15_vue@3.2.26
-  vite-npm-package: 1.0.4
+  vite-npm-package: 3.0.0
   vue: 3.2.26
 
 devDependencies:
@@ -667,10 +667,13 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /vite-npm-package/1.0.4:
-    resolution: {integrity: sha512-SFAM/LAZDGdMEBVtlflNxOeJVz/dw6Q9YCz2JqNYHm0vlW1CvMzURRf2xd1l0fEtHu7v3kCZVcl5Qa14fEw6JQ==}
+  /vite-npm-package/3.0.0:
+    resolution: {integrity: sha512-yZna8SOkOXa3CaL3E5geCPGaQpgy4PS/W00/lHJ6XyBfj+aw6epT0RsQrmkIuqefIAM72Jz8opb0MMS5jg/gDw==}
     dependencies:
+      ant-design-vue: 3.0.0-alpha.15_vue@3.2.26
       vue: 3.2.26
+    transitivePeerDependencies:
+      - '@vue/compiler-sfc'
     dev: false
 
   /vite-plugin-components/0.13.3_vite@2.7.1:
